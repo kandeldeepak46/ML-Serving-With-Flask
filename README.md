@@ -56,7 +56,7 @@ Project Organization
 
 ## usage
 prepare the workable dataset from raw dataset
-```python
-
+```bash
+$pip install -r requirements.txt
 $python src/data/make_dataset.py data/raw/hiring.csv data/processed/final_hiring.csv
 ```
