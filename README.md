@@ -54,4 +54,9 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+## usage
+prepare the workable dataset from raw dataset
+```python
+
+$python src/data/make_dataset.py data/raw/hiring.csv data/processed/final_hiring.csv
+```
