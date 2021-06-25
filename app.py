@@ -13,6 +13,11 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/healthcheck")
+def healthcheck():
+    return "The API is running smoothly"
+
+
 @app.route("/predict", methods=["POST"])
 def predict():
     """
