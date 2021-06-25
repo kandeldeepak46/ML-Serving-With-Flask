@@ -66,12 +66,13 @@ $ black . ##reformatting the code with black
 
 Train the Logistic Regression Model
 ```bash
-$python src/models/train_model.py
+$ python src/models/train_model.py
 ```
 Run the Flask Server
 ```bash
 $ python app.py
 ```
+If everything goes well, the Flask Server will start
 Test the API
 ```bash
 $ python test_request.py
