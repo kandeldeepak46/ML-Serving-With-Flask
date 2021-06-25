@@ -7,6 +7,9 @@ app = Flask(__name__, template_folder="./templates")
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "models/model.pkl")
 
+if not os.path.isfile(MODEL):
+    raise FileNotFoundError("trained model not found. please read README file")
+
 
 @app.route("/")
 def home():
