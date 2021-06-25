@@ -58,6 +58,7 @@ Project Organization
 prepare the workable dataset from raw dataset
 
 ```bash
+$ git clone git@github.com:kandeldeepak46/ML-Serving-With-Flask.git
 $ pip install -r requirements.txt
 $ python src/data/make_dataset.py data/raw/hiring.csv data/processed/final_hiring.csv
 ```
