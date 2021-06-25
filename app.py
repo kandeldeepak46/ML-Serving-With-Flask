@@ -11,14 +11,14 @@ if not os.path.isfile(MODEL_PATH):
     raise FileNotFoundError("trained model not found. please read README file")
 
 
-@app.route("/")
-def home():
-    return render_template("index.html")
-
-
 @app.route("/healthcheck")
 def healthcheck():
     return "The API is running smoothly"
+
+
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 
 @app.route("/predict", methods=["POST"])
