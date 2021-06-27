@@ -22,7 +22,7 @@ def main(input_filepath, output_filepath):
     dataset["test_score"].fillna(dataset["test_score"].mean(), inplace=True)
 
     dataset["experience"] = dataset["experience"].apply(lambda x: convert_to_int(x))
-    logger.info('processing completed, generating the csv file for processed file')
+    logger.info("processing completed, generating the csv file for processed file")
     dataset.to_csv(output_filepath)
 
 
