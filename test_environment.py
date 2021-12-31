@@ -4,6 +4,9 @@ REQUIRED_PYTHON = "python3"
 
 
 def main():
+    """
+    Main function. Checks if the required python version is installed.  If not,  exits with an error.   If so,  runs the    test_environment.py script. 
+    """
     system_major = sys.version_info.major
     if REQUIRED_PYTHON == "python":
         required_major = 2
