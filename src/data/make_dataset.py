@@ -11,8 +11,8 @@ from dotenv import find_dotenv, load_dotenv
 @click.argument("input_filepath", type=click.Path(exists=True))
 @click.argument("output_filepath", type=click.Path())
 def main(input_filepath, output_filepath):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
+    """ 
+    Convert input file to output file. 
     """
     logger = logging.getLogger(__name__)
     logger.info("making final data set from raw data")
@@ -28,6 +28,9 @@ def main(input_filepath, output_filepath):
 
 # Converting words to integer values
 def convert_to_int(word):
+    """
+    Convert word to integer value. If word is not in the dictionary, return 0.  If word is in the dictionary, return the integer value. 
+    """
     word_dict = {
         "one": 1,
         "two": 2,
