@@ -24,7 +24,7 @@ def home():
 @app.route("/predict", methods=["POST"])
 def predict():
     """
-    For rendering results on HTML GUI
+    API endpoint to predict salary based on experience and test score.
     """
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
@@ -41,7 +41,7 @@ def predict():
 @app.route("/predict_api/v1", methods=["POST"])
 def predict_api():
     """
-    Testing the api service through the request
+    API endpoint to predict salary based on experience and test score.
     """
     data = request.get_json(force=True)
     model = pickle.load(open(MODEL_PATH, "rb"))
